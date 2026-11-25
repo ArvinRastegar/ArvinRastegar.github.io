@@ -1,9 +1,64 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arvin Rastegar</title>
+<meta name="description" content="AI engineer in Munich. I build LLM applications end to end.">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #1c2126;
+  --muted: #5b6670;
+  --line: #dfe3e8;
+  --link: #0b5cad;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14171a; --text: #e8eaed; --muted: #9aa5b1; --line: #2c333a; --link: #7cb7ff; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 4.5rem 1.25rem 4rem; }
+h1 { margin: 0; font-size: 2rem; line-height: 1.2; }
+h2 { margin: 2.75rem 0 0.75rem; font-size: 1.1rem; }
+p { margin: 0.75rem 0; }
+.role { margin: 0.25rem 0 1.75rem; color: var(--muted); }
+a { color: var(--link); }
+.project { padding: 1.1rem 0; border-top: 1px solid var(--line); }
+.project h3 { margin: 0; font-size: 1.05rem; }
+.project p { margin: 0.35rem 0 0; }
+.project img { display: block; width: 100%; height: auto; margin-top: 0.9rem; border: 1px solid var(--line); border-radius: 6px; }
+.skills { color: var(--muted); }
+</style>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-</body>
+<main>
+  <h1>Arvin Rastegar</h1>
+  <p class="role">AI engineer in Munich</p>
+  <p>I build LLM applications end to end, from the model pipeline and its evaluation to the web app and the deployment.
+  Right now I work on tools that help scientists describe their data, at KIT and the GO FAIR Foundation.</p>
 
+  <h2>Projects</h2>
+  <div class="project">
+    <h3><a href="https://github.com/ArvinRastegar/iadopt-variable-description-service">I-ADOPT Variable Description Service</a></h3>
+    <p>Turns one sentence about a measurement into structured data that other systems can read. I am the technical lead and main developer.</p>
+    <img src="workspace.jpg" width="800" height="500" alt="Screenshot of the review workspace: a diagram of one variable and the list of its parts" loading="lazy">
+  </div>
+  <div class="project">
+    <h3><a href="https://github.com/ArvinRastegar/i-adopt-llm-based-service">Evaluation lab</a></h3>
+    <p>Compares language models on one benchmark and optimizes the prompt step by step, which doubled the score.</p>
+  </div>
+
+  <h2>Skills</h2>
+  <p class="skills">Python, FastAPI, LLM APIs, prompt evaluation, React, TypeScript, PostgreSQL, Docker, GitHub Actions, RDF</p>
+
+  <h2>Contact</h2>
+  <p><a href="https://www.linkedin.com/in/arvin-rastegar">LinkedIn</a> &nbsp; <a href="https://github.com/ArvinRastegar">GitHub</a></p>
+</main>
+</body>
 </html>
